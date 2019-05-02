@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | Kakao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">
@@ -45,7 +45,7 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, January 11, 2019</span>
         <li class="incoming-message message">
@@ -54,19 +54,23 @@
             alt=""
             class="g-avatar message__avatar"
           />
-          <div class="message__content">
+          <div class="message__receiving">
             <span class="message__author">Harley Keener</span>
-            <div class="message__bubble">
-              Where are you brother? Let's make a potato gun!
+            <div class="message__content">
+              <span class="message__bubble">
+                Where are you brother? Let's make a potato gun!
+              </span>
+              <span class="message__timestamp">15:19</span>
             </div>
           </div>
-          <span class="message__timestamp">15:19</span>
         </li>
-        <li class="incoming-message message">
-          <span class="message__timestamp">15:19</span>
-          <div class="message__content">
-            <div class="message__bubble">
-              I'm working now :( How about you?
+        <li class="sent-message message">
+          <div class="message__sending">
+            <div class="message__content">
+              <span class="message__timestamp">15:19</span>
+              <span class="message__bubble">
+                I'm working now 😩 How about you?
+              </span>
             </div>
           </div>
         </li>
@@ -76,13 +80,15 @@
             alt=""
             class="g-avatar message__avatar"
           />
-          <div class="message__content">
+          <div class="message__receiving">
             <span class="message__author">Harley Keener</span>
-            <div class="message__bubble">
-              Going Home!
+            <div class="message__content">
+              <span class="message__bubble">
+                Going Home!
+              </span>
+              <span class="message__timestamp">15:19</span>
             </div>
           </div>
-          <span class="message__timestamp">15:19</span>
         </li>
       </ul>
     </main>
@@ -91,7 +97,7 @@
         <i class="far fa-plus-square"></i>
       </div>
       <div class="chat__write-column">
-        <input type="text" class="chat__write-input/>
+        <input type="text" class="chat__write-input" />
       </div>
       <div class="chat__write-column">
         <span class="chat__write-icon">
